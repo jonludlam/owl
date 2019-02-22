@@ -317,7 +317,7 @@ let _supported_device = [
 
 
 let _set_device h =
-  try let x = Owl_utils.get_suffix h.output in
+  try let _x = Owl_utils.get_suffix h.output in
     Plplot.plsdev "pngcairo";
     Plplot.plsfnam h.output;
   with _exn -> ()
